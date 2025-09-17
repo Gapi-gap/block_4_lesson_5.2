@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 #include<string>
 
 class Quadrilateral
@@ -17,18 +17,18 @@ public:
 	}
 	std::string Sides()
 	{
-		return "Стороны: a = " + std::to_string(a) + ", b = " + std::to_string(b) + ", c = " + std::to_string(c) + ", d = " + std::to_string(d);
+		return "РЎС‚РѕСЂРѕРЅС‹: a = " + std::to_string(a) + ", b = " + std::to_string(b) + ", c = " + std::to_string(c) + ", d = " + std::to_string(d);
 	}
 	std::string Angles()
 	{
-		return "Углы: a = " + std::to_string(A) + ", b = " + std::to_string(B) + ", c = " + std::to_string(C) + ", d = " + std::to_string(D);
+		return "РЈРіР»С‹: a = " + std::to_string(A) + ", b = " + std::to_string(B) + ", c = " + std::to_string(C) + ", d = " + std::to_string(D);
 	}
 
 
 private:
-	//Стороны
+	//РЎС‚РѕСЂРѕРЅС‹
 	int a, b, c, d;
-	//Углы
+	//РЈРіР»С‹
 	int A, B, C, D;
 };
 
@@ -75,11 +75,11 @@ public:
 
 	std::string Sides()
 	{
-		return "Стороны: a = " + std::to_string(a_) + ", b = " + std::to_string(b_) + ", c = " + std::to_string(c_);
+		return "РЎС‚РѕСЂРѕРЅС‹: a = " + std::to_string(a_) + ", b = " + std::to_string(b_) + ", c = " + std::to_string(c_);
 	}
 	std::string Angles()
 	{
-		return "Углы: a = " + std::to_string(A_) + ", b = " + std::to_string(B_) + ", c = " + std::to_string(C_);
+		return "РЈРіР»С‹: a = " + std::to_string(A_) + ", b = " + std::to_string(B_) + ", c = " + std::to_string(C_);
 	}
 
 private:
@@ -113,64 +113,65 @@ public:
 
 void PrintInfo()
 {
-	//четурехугольники
+	//С‡РµС‚СѓСЂРµС…СѓРіРѕР»СЊРЅРёРєРё
 	{
-		//базовый
+		//Р±Р°Р·РѕРІС‹Р№
 		Quadrilateral quadrilateral(10,20,30,40,50,60,70,80);
-		std::cout << "Четырехугольник:" << std::endl;
+		std::cout << "Р§РµС‚С‹СЂРµС…СѓРіРѕР»СЊРЅРёРє:" << std::endl;
 		std::cout<<quadrilateral.Sides()<<std::endl;
 		std::cout << quadrilateral.Angles() << std::endl;
 		std::cout << std::endl;
-		//Прямоугольник
+		//РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє
 		Rectangle rectangle(10,20);
-		std::cout << "Прямоугольник:" << std::endl;
+		std::cout << "РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє:" << std::endl;
 		std::cout << rectangle.Sides() << std::endl;
 		std::cout << rectangle.Angles() << std::endl;
 		std::cout << std::endl;
-		//Квадрат
+		//РљРІР°РґСЂР°С‚
 		Square square(10);
-		std::cout << "Квадрат:" << std::endl;
+		std::cout << "РљРІР°РґСЂР°С‚:" << std::endl;
 		std::cout << square.Sides() << std::endl;
 		std::cout << square.Angles() << std::endl;
 		std::cout << std::endl;
-		//Параллелограмм
+		//РџР°СЂР°Р»Р»РµР»РѕРіСЂР°РјРј
 		Parallelogram parallelogram(20,30,30,40);
-		std::cout << "Параллелограмм:" << std::endl;
+		std::cout << "РџР°СЂР°Р»Р»РµР»РѕРіСЂР°РјРј:" << std::endl;
 		std::cout << parallelogram.Sides() << std::endl;
 		std::cout << parallelogram.Angles() << std::endl;
 		std::cout << std::endl;
-		//Ромб
+		//Р РѕРјР±
 		Rhombus rhombus(30,30,40);
-		std::cout << "Ромб:" << std::endl;
+		std::cout << "Р РѕРјР±:" << std::endl;
 		std::cout << rhombus.Sides() << std::endl;
 		std::cout << rhombus.Angles() << std::endl;
 		std::cout << std::endl;
 	}
 
-	//треугольник
+	//С‚СЂРµСѓРіРѕР»СЊРЅРёРє
 	{
 		Triangles triangles(10, 20, 30, 50, 60, 70);
-		std::cout << "Треугольник:" << std::endl;
+		std::cout << "РўСЂРµСѓРіРѕР»СЊРЅРёРє:" << std::endl;
 		std::cout << triangles.Sides() << std::endl;
 		std::cout << triangles.Angles() << std::endl;
 		std::cout << std::endl;
 
 		RightTriangle right_triangle(10, 20, 30, 50, 60);
-		std::cout << "Прямоугольный треугольник:" << std::endl;
+		std::cout << "РџСЂСЏРјРѕСѓРіРѕР»СЊРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє:" << std::endl;
 		std::cout << right_triangle.Sides() << std::endl;
 		std::cout << right_triangle.Angles() << std::endl;
 		std::cout << std::endl;
 
 		IsoscelesTriangle isosceles_triangle(10, 20, 60, 70);
-		std::cout << "Равнобедренный треугольник:" << std::endl;
+		std::cout << "Р Р°РІРЅРѕР±РµРґСЂРµРЅРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє:" << std::endl;
 		std::cout << isosceles_triangle.Sides() << std::endl;
 		std::cout << isosceles_triangle.Angles() << std::endl;
 		std::cout << std::endl;
 
 		EquilateralTriangle equilateralTriangle(30);
-		std::cout << "Равносторонний треугольник:" << std::endl;
+		std::cout << "Р Р°РІРЅРѕСЃС‚РѕСЂРѕРЅРЅРёР№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє:" << std::endl;
 		std::cout << equilateralTriangle.Sides() << std::endl;
 		std::cout << equilateralTriangle.Angles() << std::endl;
+		std::cout << std::endl;
 		std::cout << std::endl;
 	}
 }
