@@ -1,0 +1,8 @@
+*.filters
+*.user
+.vs/lesson_5.1/
+lesson_5.1/x64/Debug/
+x64/Debug/
+x64/
+lesson_5.1/
+.vs/
